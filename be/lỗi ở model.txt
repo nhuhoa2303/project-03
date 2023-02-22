@@ -1,0 +1,5 @@
+failed to lazily initialize a collection of role: 
+com.example.demo.models.modelsjwt.Users.roles, could not initialize proxy - no Session
+ ----
+lỗi này chỉ cần đổi ở file model User
+@ManyToMany(fetch = FetchType.LAZY) thành @ManyToMany(fetch = FetchType.EAGER)
