@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +8,7 @@ import { ProductsEditComponent } from './products-edit/products-edit.component';
 import { ProductsCreateComponent } from './products-create/products-create.component';
 import { CartProductComponent } from './cart-product/cart-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
+import { SignupSigninComponent } from './signup-signin/signup-signin.component';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
     ProductsEditComponent,
     ProductsCreateComponent,
     CartProductComponent,
-    DetailProductComponent
+    DetailProductComponent,
+    SignupSigninComponent
   ],
   imports: [
     CommonModule,
-    ComponentRoutingModule
+    ComponentRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentModule { }

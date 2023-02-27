@@ -1,0 +1,45 @@
+<div class="test">
+  <input type="checkbox" id="check" />
+  <div class="login form">
+    <header> Login with your account</header>
+    <form action="#" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <input type="text" placeholder="Enter username" formControlName="username"/>
+      <input type="password" placeholder="Enter password" formControlName="password"/>
+      <a href="#">Forgot password?</a>
+      <input type="submit" class="button" value="Login with your account" />
+    </form>
+
+    <div class="signup">
+      <span class="signup"
+        >Don't have an account?
+        <label for="check">Signup</label>
+      </span>
+    </div>
+  </div>
+  <div class="logup form">
+    <header>Register an account</header>
+    <form action="#" class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control"  placeholder="Enter username"/>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control"placeholder="Enter email" />
+      </div>
+      <div class="col-md-6">
+        <input type="password" class="form-control"placeholder="Enter password"/>
+      </div>
+      <div class="col-md-6">
+        <input type="password"  class="form-control" placeholder="Confirm password" />
+      </div>
+
+      <!-- <a href="#">Forgot password?</a> -->
+      <input type="button" class="button" value="Logup account new" />
+    </form>
+    <div class="signup">
+      <span class="signup"
+        >Already have an account?
+        <label for="check">Login</label>
+      </span>
+    </div>
+  </div>
+</div>

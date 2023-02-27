@@ -10,26 +10,22 @@ import { ApiDisplayService } from 'src/app/services/ApiDisplay/api-display.servi
   styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
-  myScriptElement: HTMLScriptElement;
   productsList: Products[] = [];
-
   constructor(private apiDisplay: ApiDisplayService, private title: Title) {
-    this.myScriptElement = document.createElement("script");
-    this.myScriptElement.src = "./assets/js/theme.js"
-    document.body.appendChild(this.myScriptElement);
     this.title.setTitle("Danh sach hang")
   }
 
   getAll() {
-   this.apiDisplay.getAll().subscribe(d => {
-    this.productsList = d;
-    console.log(d);
+    this.apiDisplay.getAll().subscribe(d => {
+      this.productsList = d;
+      console.log(d);
 
-   })
+    })
   }
 
   ngOnInit(): void {
-   this.getAll();
+    this.getAll();
+
   }
 
 

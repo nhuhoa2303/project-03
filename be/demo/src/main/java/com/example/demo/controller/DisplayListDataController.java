@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.models.Products;
 import com.example.demo.repository.IProductsRepository;
 
-@CrossOrigin
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 public class DisplayListDataController {
     @Autowired

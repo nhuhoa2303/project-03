@@ -1,3 +1,4 @@
+import { SignupSigninComponent } from './signup-signin/signup-signin.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { CartProductComponent } from './cart-product/cart-product.component';
 import { ProductsCreateComponent } from './products-create/products-create.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'create', component: ProductsCreateComponent},
   {path:'cart', component: CartProductComponent},
   {path:'detail', component: DetailProductComponent},
+  {path:'login-up', component: SignupSigninComponent}
 ];
 
 @NgModule({
